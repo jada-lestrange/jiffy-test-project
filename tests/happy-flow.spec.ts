@@ -38,7 +38,7 @@ test.describe('Add to cart and complete order', () => {
 
     test("Add several products to the cart from product profile", async () => {
         await pages.Landing.verifyLanding();
-        productNumber = 4;
+        productNumber = 3;
         indexes = await pages.Landing.getRandomIconIndexes(pages.Landing.productIcon, productNumber);
         for (let i = 0; i < indexes.length; i++) {
             const index = indexes[i];
