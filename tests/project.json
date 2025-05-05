@@ -1,0 +1,13 @@
+{
+  "name": "tests",
+  "targets": {
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx playwright test",
+        "cwd": "tests",
+        "parallel": false
+      }
+    }
+  }
+}

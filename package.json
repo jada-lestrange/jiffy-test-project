@@ -1,0 +1,27 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ng": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "npx nx run-many --all --target=test --ui --skip-nx-cache",
+    "test:coverage": "npx jest --coverage",
+    "e2e": "npx nx run-many --target=e2e --projects=tests --skip-nx-cache",
+    "e2e:ui": "npx nx run-many --target=e2e --projects=tests --ui --skip-nx-cache",
+    "format": "npx nx format:check",
+    "format:write": "npx nx format:write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/js": "^20.8.1",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3",
+    "nx": "20.8.1"
+  },
+  "nx": {}
+}
